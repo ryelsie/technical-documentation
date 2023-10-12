@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Variables</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#JavaScript_And_Java"
+            >JavaScript and Java</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Hello_world">Hello world</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Declaring variables</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Variable_scope">Variable scope</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="JavaScript_And_Java">
+        <header>JavaScript and Java</header>
+        <article>
+          <p>
+            JavaScript and Java are similar in some ways but fundamentally
+            different in some others. The JavaScript language resembles Java but
+            does not have Java's static typing and strong type checking.
+            JavaScript follows most Java expression syntax, naming conventions
+            and basic control-flow constructs which was the reason why it was
+            renamed from LiveScript to JavaScript.
+          </p>
+          <p>
+            In contrast to Java's compile-time system of classes built by
+            declarations, JavaScript supports a runtime system based on a small
+            number of data types representing numeric, Boolean, and string
+            values. JavaScript has a prototype-based object model instead of the
+            more common class-based object model. The prototype-based model
+            provides dynamic inheritance; that is, what is inherited can vary
+            for individual objects. JavaScript also supports functions without
+            any special declarative requirements. Functions can be properties of
+            objects, executing as loosely typed methods.
+          </p>
+          <p>
+            JavaScript is a very free-form language compared to Java. You do not
+            have to declare all variables, classes, and methods. You do not have
+            to be concerned with whether methods are public, private, or
+            protected, and you do not have to implement interfaces. Variables,
+            parameters, and function return types are not explicitly typed.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          <p>
+            To get started with writing JavaScript, open the Scratchpad and
+            write your first "Hello world" JavaScript code:
+          </p>
+          <code>
+            <pre>
+function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");</pre
+            >
+          </code>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fugit
+            libero repudiandae. Neque aliquam, quo tempora laborum porro quod
+            animi totam tempore. Nostrum unde vero, animi perferendis placeat
+            quod laboriosam voluptas quidem porro voluptate culpa quaerat
+            sapiente odit beatae pariatur voluptatibus necessitatibus suscipit
+            officia debitis quam! Eos veritatis sit ex.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            consectetur pariatur hic molestias exercitationem dignissimos
+            dolores cum neque vitae, veritatis velit impedit doloremque laborum.
+            Quidem error unde sapiente deserunt tenetur ipsam rem minima
+            incidunt atque laudantium nam asperiores aperiam consequatur, iusto
+            harum veritatis alias voluptatum magni. Iste id nesciunt sequi fuga,
+            delectus temporibus dicta voluptates fugiat ex ipsa eius a? Harum
+            nam quaerat maiores! Quos asperiores nulla laborum. Perferendis,
+            facere. Ipsum vero maxime nobis modi provident nisi a, sed in.
+          </p>
+          <p>Primitive data types:</p>
+          <ul>
+            <li>Boolean. true and false.</li>
+            <li>
+              null. A special keyword denoting a null value. Because JavaScript
+              is case-sensitive, null is not the same as Null, NULL, or any
+              other variant.
+            </li>
+            <li>undefined. A top-level property whose value is undefined.</li>
+            <li>Number. 42 or 3.14159.</li>
+            <li>String. "Howdy"</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <article>
+          <p>With the keyword var. For example,</p>
+          <code><pre>var x = 42.</pre></code>
+          <p>
+            This syntax can be used to declare both local and global variables.
+          </p>
+          <p>By simply assigning it a value. For example,</p>
+          <code><pre>x = 42.</pre></code>
+          <p>
+            This always declares a global variable. It generates a strict
+            JavaScript warning. You shouldn't use this variant.
+          </p>
+          <p>With the keyword let. For example,</p>
+          <code><pre>let y = 13.</pre></code>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error sit
+            quae voluptatem illo? Nihil, accusamus quo. Possimus, nobis vel
+            velit facere eligendi voluptatem temporibus architecto asperiores
+            rerum distinctio ullam. Porro vel fugit excepturi delectus maxime,
+            neque quos perspiciatis iure impedit explicabo quam facere iusto,
+            illum hic quibusdam voluptatem unde quo accusantium perferendis
+            dolores possimus vero. Fugit adipisci alias quis non? Dicta deserunt
+            voluptates itaque enim modi, neque optio libero assumenda.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+          <p>
+            When you declare a variable outside of any function, it is called a
+            global variable, because it is available to any other code in the
+            current document. When you declare a variable within a function, it
+            is called a local variable, because it is available only within that
+            function. JavaScript before ECMAScript 2015 does not have block
+            statement scope; rather, a variable declared within a block is local
+            to the function (or global scope) that the block resides within. For
+            example the following code will log 5, because the scope of x is the
+            function (or global context) within which x is declared, not the
+            block, which in this case is an if statement.
+          </p>
+          <code><pre>if (true) { var x = 5; } console.log(x); // 5</pre></code>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            ea dolorem suscipit, eveniet modi nobis corporis aliquid rerum vitae
+            ut quasi. Unde eligendi aliquam voluptatem vel autem nobis deserunt,
+            fugiat illum, sunt fuga eveniet quis! Necessitatibus praesentium
+            perferendis porro natus officiis harum, inventore saepe quisquam
+            adipisci, autem delectus, repellendus vitae commodi illo. Culpa fuga
+            autem vitae voluptatem optio iusto provident libero, reiciendis
+            consequatur illum accusantium nisi corrupti dolore est error quasi
+            maiores. Fuga quisquam cumque cum maiores odio nam eligendi debitis
+            voluptatem earum, dolor facilis totam animi modi ipsa atque aperiam
+            tempora harum cupiditate voluptatibus! Quaerat odio consequatur
+            illum eum!
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
